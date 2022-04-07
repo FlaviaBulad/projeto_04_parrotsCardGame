@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef9bf;
+}
+
+header {
+  width: 540px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #75b79e;
+}
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  width: 900px;
+  padding-top: 30px;
+}
+.card {
+  width: 117px;
+  height: 146px;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.front-img {
+  width: 100px;
+}
+.face {
+  background: #a7e9af;
+  border: 1px solid #99cea8;
+  border-radius: 5px;
+  position: absolute;
+  margin: auto;
+  width: 100px;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
+}
+.back-face {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back-face {
+  transform: rotateY(0deg);
+}
+
+.card:hover .front-face {
+  transform: rotateY(-180deg);
+}
