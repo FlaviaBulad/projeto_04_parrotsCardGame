@@ -88,6 +88,9 @@ function turnCard(element) {
 
   if (pairs === cardsNumber / 2) {
     //win condition
-    alert(`Você ganhou em ${plays} jogadas`);
-  }
+    setTimeout(function()
+    {
+      alert(`Você ganhou em ${plays} jogadas`)
+    }, 1000);
+}
 }
