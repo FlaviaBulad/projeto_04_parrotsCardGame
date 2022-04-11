@@ -5,32 +5,33 @@ let pairs = 0;
 const deck = [
   //back card images
   "images/pyro.png",
-  "images/hydro.png",
-  "images/anemo.png",
-  "images/electro.png",
-  "images/dendro.png",
-  "images/cryo.png",
-  "images/geo.png",
   "images/pyro.png",
   "images/hydro.png",
+  "images/hydro.png",
+  "images/anemo.png",
   "images/anemo.png",
   "images/electro.png",
+  "images/electro.png",
+  "images/dendro.png",
   "images/dendro.png",
   "images/cryo.png",
+  "images/cryo.png",
   "images/geo.png",
+  "images/geo.png",
+  
 ];
 
 function askCardsNumber() {
   //asks how many cards to show up
   cardsNumber = prompt(
-    "Com quantas cartas deseja jogar? (Escolha um nº par de 4 a 14"
+    "Com quantas cartas deseja jogar? Escolha um nº par de 4 a 14"
   );
 
   while (cardsNumber % 2 !== 0 || cardsNumber < 4 || cardsNumber > 14) {
     //ask loop if input wrongly
     alert("Você precisa escolher um nº par de 4 a 14!");
     cardsNumber = prompt(
-      "Com quantas cartas deseja jogar? (Escolha um nº par de 4 a 14"
+      "Com quantas cartas deseja jogar? Escolha um nº par de 4 a 14"
     );
   }
 }
